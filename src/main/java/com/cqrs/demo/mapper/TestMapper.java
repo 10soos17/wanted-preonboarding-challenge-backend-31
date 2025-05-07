@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
 
-import com.cqrs.demo.model.dto.Hello;
+import com.cqrs.demo.model.dto.User;
 
 @Mapper
 //@Repository
@@ -12,5 +12,5 @@ public interface TestMapper {
 	
 	// Hello selectTest();
 	
-	List<Hello> testSelectList();
+	List<User> testSelectList();
 }

@@ -14,13 +14,27 @@ import lombok.ToString;
 @Getter
 @ToString
 public class CommonError {
-    /*
-     * 요청 결과
-     */
-    private final boolean success = false;
-    /*
-     * 에러 코드, 메시지
-     */   
-    private ErrorMessage error;
+	/*
+	 * 요청 결과
+	 */
+	private final boolean success = false;
+	/*
+	 * 에러 코드, 메시지
+	 */   
+	private ErrorMessage error;
+	
+    public CommonError(ErrorMessage error) {
+		super();
+		this.error = error;
+	}
+	public ErrorMessage getError() {
+		return error;
+	}
+	public void setError(ErrorMessage error) {
+		this.error = error;
+	}
+	public boolean isSuccess() {
+		return success;
+	}
 
 }
