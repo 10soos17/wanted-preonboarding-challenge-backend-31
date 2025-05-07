@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.cqrs.demo.mapper.TestMapper;
 import com.cqrs.demo.model.dto.Hello;
+import com.cqrs.demo.model.dto.User;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -17,9 +18,9 @@ public class TestService {
 	@Autowired
 	private TestMapper testMapper;
 
-	public List<Hello> testSelectList() {
+	public List<User> testSelectList() {
 		System.out.println("===============test_service");
-		List<Hello> res = testMapper.testSelectList();
+		List<User> res = testMapper.testSelectList();
 		System.out.println("===============test_service__________res");
 		return res;
 	}
